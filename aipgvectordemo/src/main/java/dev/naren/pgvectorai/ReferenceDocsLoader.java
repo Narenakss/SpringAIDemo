@@ -35,7 +35,7 @@ public class ReferenceDocsLoader {
 
         log.info("Current count of the Vector Store: {}", count);
         if (count == 0) {
-            log.info("Loading T20 World cup FAQs PDF into Vector Store");
+            log.info("Loading Spectrum FAQs PDF into Vector Store");
             var config = PdfDocumentReaderConfig.builder()
                     .withPageExtractedTextFormatter(new ExtractedTextFormatter.Builder().withNumberOfBottomTextLinesToDelete(0)
                             .withNumberOfTopPagesToSkipBeforeDelete(0)
