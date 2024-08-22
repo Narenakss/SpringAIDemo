@@ -32,7 +32,7 @@ public class AIController {
     }
 
     @GetMapping("/getData")
-    public String question(@RequestParam(value ="message", defaultValue = "Who won T20 World cup in 2024") String message) {
+    public String question(@RequestParam(value ="message", defaultValue = "Spectrum internet monthly plan") String message) {
         PromptTemplate promptTemplate = new PromptTemplate(sbPromptTemplate);
         Map<String, Object> promptParameters = new HashMap<>();
         promptParameters.put("input", message);
