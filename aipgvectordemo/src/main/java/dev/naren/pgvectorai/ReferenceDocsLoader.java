@@ -19,7 +19,7 @@ public class ReferenceDocsLoader {
     private static final Logger log = LoggerFactory.getLogger(ReferenceDocsLoader.class);
     private final JdbcClient jdbcClient;
     private final VectorStore vectorStore;
-    @Value("classpath:/docs/T20WorldCup2024_FAQ.pdf")
+    @Value("classpath:/docs/Spectrum_FAQs.pdf")
     private Resource pdfResource;
 
     public ReferenceDocsLoader(JdbcClient jdbcClient, VectorStore vectorStore) {
